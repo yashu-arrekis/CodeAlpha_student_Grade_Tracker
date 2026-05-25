@@ -38,8 +38,24 @@ public class Main{
 
                     break;
                 case 2:
-                    System.out.println("Display Students Selected");
-                    break;
+
+                     if(students.isEmpty()) {
+
+                   	 System.out.println("No Students Added Yet!");
+
+   			 } else {
+
+       			 System.out.println("\n--- Student Records ---");
+
+        		for(Student s : students) {
+
+           		 System.out.println("Name: " + s.name);
+            		System.out.println("Marks: " + s.marks);
+           		 System.out.println("----------------------");
+        		}
+    		}
+
+   			 break;
                 case 3:
                     System.out.println("Average Selected");
                     break;
